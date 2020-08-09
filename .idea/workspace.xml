@@ -25,7 +25,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46afb68a-c8e6-499a-a51a-58b11fa33f82" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/dda_line.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +38,13 @@
   </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Rust File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -84,9 +95,21 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="draw_rec" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="run --package graphics_rs --bin graphics_rs 200 250" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="run" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="run --package graphics_rs --bin graphics_rs" />
+      <option name="command" value="run --package graphics_rs --bin draw_rec" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -98,18 +121,22 @@
     </configuration>
     <list>
       <item itemvalue="Cargo Command.build" />
+      <item itemvalue="Cargo Command.draw_rec" />
       <item itemvalue="Cargo Command.run" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Cargo Command.run" />
-        <item itemvalue="Cargo Command.build" />
-        <item itemvalue="Cargo Command.build" />
+        <item itemvalue="Cargo Command.run" />
+        <item itemvalue="Cargo Command.run" />
+        <item itemvalue="Cargo Command.run" />
+        <item itemvalue="Cargo Command.run" />
       </list>
     </recent_temporary>
   </component>
   <component name="RustProjectSettings">
     <option name="externalLinter" value="Clippy" />
+    <option name="runExternalLinterOnTheFly" value="true" />
     <option name="toolchainHomeDirectory" value="/usr/bin" />
     <option name="version" value="2" />
   </component>
@@ -122,7 +149,9 @@
       <option name="presentableId" value="Default" />
       <updated>1594312934435</updated>
       <workItem from="1594312936379" duration="5842000" />
-      <workItem from="1594469698151" duration="1240000" />
+      <workItem from="1594469698151" duration="1611000" />
+      <workItem from="1596964000968" duration="1341000" />
+      <workItem from="1596965353549" duration="1247000" />
     </task>
     <servers />
   </component>
@@ -142,10 +171,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="519" y="267" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594318446008">
+    <state x="448" y="142" width="800" height="711" key="#Plugins" timestamp="1596965373609">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="519" y="267" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1594318446008" />
+    <state x="448" y="142" width="800" height="711" key="#Plugins/0.28.1920.1052@0.28.1920.1052" timestamp="1596965373609" />
+    <state x="519" y="267" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596964684169">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="519" y="267" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1596964684169" />
+    <state x="636" y="256" width="424" height="483" key="FileChooserDialogImpl" timestamp="1596964022201">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="636" y="256" width="424" height="483" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1596964022201" />
     <state x="910" y="507" key="Github.ShareDialog" timestamp="1594318712807">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
@@ -154,33 +191,41 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="851" y="264" width="411" height="686" key="Github.UntrackedFilesDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1594318735620" />
-    <state width="1870" height="224" key="GridCell.Tab.0.bottom" timestamp="1594470321607">
+    <state width="1657" height="192" key="GridCell.Tab.0.bottom" timestamp="1596966503049">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1870" height="224" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1594470321607" />
-    <state width="1870" height="224" key="GridCell.Tab.0.center" timestamp="1594470321607">
+    <state width="1657" height="192" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1596966503049" />
+    <state width="1657" height="192" key="GridCell.Tab.0.center" timestamp="1596966503049">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1870" height="224" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1594470321607" />
-    <state width="1870" height="224" key="GridCell.Tab.0.left" timestamp="1594470321607">
+    <state width="1657" height="192" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1596966503049" />
+    <state width="1657" height="192" key="GridCell.Tab.0.left" timestamp="1596966503049">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1870" height="224" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1594470321607" />
-    <state width="1870" height="224" key="GridCell.Tab.0.right" timestamp="1594470321607">
+    <state width="1657" height="192" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1596966503049" />
+    <state width="1657" height="192" key="GridCell.Tab.0.right" timestamp="1596966503049">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1870" height="224" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1594470321607" />
-    <state x="644" y="355" width="824" height="504" key="IDE.errors.dialog" timestamp="1594318744029">
+    <state width="1657" height="192" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1596966503049" />
+    <state x="644" y="355" width="1147" height="573" key="IDE.errors.dialog" timestamp="1596965323480">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="644" y="355" width="824" height="504" key="IDE.errors.dialog/0.28.1920.1052@0.28.1920.1052" timestamp="1594318744029" />
-    <state x="543" y="244" key="SettingsEditor" timestamp="1594313048318">
+    <state x="644" y="355" width="1147" height="573" key="IDE.errors.dialog/0.28.1920.1052@0.28.1920.1052" timestamp="1596965323480" />
+    <state x="543" y="244" key="SettingsEditor" timestamp="1596965240250">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="543" y="244" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1594313048318" />
+    <state x="543" y="244" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1596965240250" />
+    <state x="572" y="343" width="553" height="309" key="cloudConfig.PluginsDialog" timestamp="1596964485488">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="572" y="343" width="553" height="309" key="cloudConfig.PluginsDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1596964485488" />
     <state x="725" y="282" width="672" height="678" key="run.anything.popup" timestamp="1594318474459">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="725" y="282" width="672" height="678" key="run.anything.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1594318474459" />
+    <state x="516" y="232" width="672" height="678" key="search.everywhere.popup" timestamp="1596965359766">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="516" y="232" width="672" height="678" key="search.everywhere.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1596965359766" />
   </component>
 </project>
