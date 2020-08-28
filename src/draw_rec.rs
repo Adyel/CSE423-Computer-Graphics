@@ -1,10 +1,10 @@
 extern crate piston_window;
 
-use piston_window::*;
 use std::env;
 use std::option::Option::Some;
 
 use log::{info, warn};
+use piston_window::*;
 use simplelog::*;
 
 const WINDOW_SIZE: u32 = 512;
