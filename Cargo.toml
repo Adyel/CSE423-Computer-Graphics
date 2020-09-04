@@ -13,6 +13,14 @@ path = "src/draw_rec.rs"
 name = "dda_line"
 path = "src/dda_line.rs"
 
+[[bin]]
+name = "minifb"
+path = "src/minifb.rs"
+
+[[bin]]
+name = "midpoint_line"
+path = "src/midpoint_line.rs"
+
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -20,3 +28,4 @@ path = "src/dda_line.rs"
 piston_window = "0.111.0"
 log = "0.4.11"
 simplelog = "0.8.0"
+image = "0.23.8"

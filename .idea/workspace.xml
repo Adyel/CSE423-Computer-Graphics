@@ -25,8 +25,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46afb68a-c8e6-499a-a51a-58b11fa33f82" name="Default Changelist" comment="finish lab02">
+      <change afterPath="$PROJECT_DIR$/src/midpoint_line.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/draw_rec.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/draw_rec.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,19 +68,31 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="Debugger.ObjectiveC" />
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="cargo build" />
       <command value="cargo build --release" />
       <command value="cargo clean" />
+      <command value="cargo build" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo Command.Run dda_line">
-    <configuration name="Run dda_line" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+  <component name="RunManager" selected="Cargo Command.Run midpoint_line">
+    <configuration name="Run demo" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="run --package graphics_rs --bin dda_line" />
+      <option name="command" value="run --package graphics_rs --bin demo" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run midpoint_line" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="run --package graphics_rs --bin midpoint_line" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -90,7 +104,7 @@
     </configuration>
     <configuration name="build" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="build --release" />
+      <option name="command" value="build" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -100,21 +114,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="clean" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="new" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="clean" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="draw_rec" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="run --package graphics_rs --bin graphics_rs 200 250" />
+      <option name="command" value="new simple_rust --bin" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -136,25 +138,20 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Cargo Command.Run dda_line" />
+      <item itemvalue="Cargo Command.Run demo" />
+      <item itemvalue="Cargo Command.Run midpoint_line" />
       <item itemvalue="Cargo Command.build" />
-      <item itemvalue="Cargo Command.clean" />
-      <item itemvalue="Cargo Command.draw_rec" />
+      <item itemvalue="Cargo Command.new" />
       <item itemvalue="Cargo Command.run" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo Command.Run dda_line" />
-        <item itemvalue="Cargo Command.run" />
-        <item itemvalue="Cargo Command.draw_rec" />
-        <item itemvalue="Cargo Command.clean" />
+        <item itemvalue="Cargo Command.Run midpoint_line" />
+        <item itemvalue="Cargo Command.Run demo" />
         <item itemvalue="Cargo Command.build" />
+        <item itemvalue="Cargo Command.build" />
+        <item itemvalue="Cargo Command.new" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +178,15 @@
       <workItem from="1597760758881" duration="9788000" />
       <workItem from="1597772737592" duration="5040000" />
       <workItem from="1598256556159" duration="5000" />
-      <workItem from="1598636491748" duration="2053000" />
+      <workItem from="1598636491748" duration="7846000" />
+      <workItem from="1598683494165" duration="4066000" />
+      <workItem from="1598704361568" duration="1038000" />
+      <workItem from="1598706594260" duration="7789000" />
+      <workItem from="1598818340077" duration="35000" />
+      <workItem from="1598818387669" duration="2347000" />
+      <workItem from="1598821414028" duration="2426000" />
+      <workItem from="1598888897411" duration="4932000" />
+      <workItem from="1599224585742" duration="41000" />
     </task>
     <task id="LOCAL-00001" summary="finalize lab01">
       <created>1596966694121</created>
@@ -197,7 +202,21 @@
       <option name="project" value="LOCAL" />
       <updated>1598646327185</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="finish lab02">
+      <created>1598646580561</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1598646580561</updated>
+    </task>
+    <task id="LOCAL-00004" summary="finish lab02">
+      <created>1598646589811</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1598646589811</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +248,14 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="519" y="267" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1596964684169" />
+    <state x="771" y="244" width="524" height="504" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598823454853">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="771" y="244" width="524" height="504" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1598823454853" />
+    <state x="798" y="128" width="1122" height="738" key="DiffContextDialog" timestamp="1598820103801">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="798" y="128" width="1122" height="738" key="DiffContextDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1598820103801" />
     <state x="636" y="256" width="424" height="483" key="FileChooserDialogImpl" timestamp="1596964022201">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
@@ -241,61 +268,81 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="851" y="264" width="411" height="686" key="Github.UntrackedFilesDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1594318735620" />
-    <state width="1870" height="312" key="GridCell.Tab.0.bottom" timestamp="1598646370579">
+    <state width="1262" height="253" key="GridCell.Tab.0.bottom" timestamp="1598893832860">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1870" height="312" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1598646370579" />
-    <state width="1870" height="312" key="GridCell.Tab.0.center" timestamp="1598646370579">
+    <state width="1262" height="253" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1598893832860" />
+    <state width="1262" height="253" key="GridCell.Tab.0.center" timestamp="1598893832859">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1870" height="312" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1598646370579" />
-    <state width="1870" height="312" key="GridCell.Tab.0.left" timestamp="1598646370578">
+    <state width="1262" height="253" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1598893832859" />
+    <state width="1262" height="253" key="GridCell.Tab.0.left" timestamp="1598893832859">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1870" height="312" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1598646370578" />
-    <state width="1870" height="312" key="GridCell.Tab.0.right" timestamp="1598646370579">
+    <state width="1262" height="253" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1598893832859" />
+    <state width="1262" height="253" key="GridCell.Tab.0.right" timestamp="1598893832859">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1870" height="312" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1598646370579" />
-    <state width="1657" height="296" key="GridCell.Tab.1.bottom" timestamp="1597777821628">
+    <state width="1262" height="253" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1598893832859" />
+    <state width="1262" height="253" key="GridCell.Tab.1.bottom" timestamp="1598893832860">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1657" height="296" key="GridCell.Tab.1.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1597777821628" />
-    <state width="1657" height="296" key="GridCell.Tab.1.center" timestamp="1597777821628">
+    <state width="1262" height="253" key="GridCell.Tab.1.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1598893832860" />
+    <state width="1262" height="253" key="GridCell.Tab.1.center" timestamp="1598893832860">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1657" height="296" key="GridCell.Tab.1.center/0.28.1920.1052@0.28.1920.1052" timestamp="1597777821628" />
-    <state width="1657" height="296" key="GridCell.Tab.1.left" timestamp="1597777821628">
+    <state width="1262" height="253" key="GridCell.Tab.1.center/0.28.1920.1052@0.28.1920.1052" timestamp="1598893832860" />
+    <state width="1262" height="253" key="GridCell.Tab.1.left" timestamp="1598893832860">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1657" height="296" key="GridCell.Tab.1.left/0.28.1920.1052@0.28.1920.1052" timestamp="1597777821628" />
-    <state width="1657" height="296" key="GridCell.Tab.1.right" timestamp="1597777821628">
+    <state width="1262" height="253" key="GridCell.Tab.1.left/0.28.1920.1052@0.28.1920.1052" timestamp="1598893832860" />
+    <state width="1262" height="253" key="GridCell.Tab.1.right" timestamp="1598893832860">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1657" height="296" key="GridCell.Tab.1.right/0.28.1920.1052@0.28.1920.1052" timestamp="1597777821628" />
+    <state width="1262" height="253" key="GridCell.Tab.1.right/0.28.1920.1052@0.28.1920.1052" timestamp="1598893832860" />
     <state x="644" y="355" width="1147" height="573" key="IDE.errors.dialog" timestamp="1596965323480">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="644" y="355" width="1147" height="573" key="IDE.errors.dialog/0.28.1920.1052@0.28.1920.1052" timestamp="1596965323480" />
-    <state x="543" y="244" key="SettingsEditor" timestamp="1598646577504">
+    <state x="840" y="203" key="SettingsEditor" timestamp="1598820134458">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="543" y="244" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1598646577504" />
-    <state x="448" y="234" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1598646335094">
+    <state x="840" y="203" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1598820134458" />
+    <state x="448" y="234" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1598646609493">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="448" y="234" width="800" height="528" key="Vcs.Push.Dialog.v2/0.28.1920.1052@0.28.1920.1052" timestamp="1598646335094" />
+    <state x="448" y="234" width="800" height="528" key="Vcs.Push.Dialog.v2/0.28.1920.1052@0.28.1920.1052" timestamp="1598646609493" />
     <state x="572" y="343" width="553" height="309" key="cloudConfig.PluginsDialog" timestamp="1596964485488">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="572" y="343" width="553" height="309" key="cloudConfig.PluginsDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1596964485488" />
-    <state x="725" y="282" width="672" height="678" key="run.anything.popup" timestamp="1597767849441">
+    <state x="832" y="399" width="503" height="388" key="cloudConfig.SelfSettingsDialog" timestamp="1598647385319">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="725" y="282" width="672" height="678" key="run.anything.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1597767849441" />
+    <state x="832" y="399" width="503" height="388" key="cloudConfig.SelfSettingsDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1598647385319" />
+    <state x="725" y="282" width="672" height="678" key="run.anything.popup" timestamp="1598649896982">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="725" y="282" width="672" height="678" key="run.anything.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1598649896982" />
     <state x="516" y="232" width="672" height="678" key="search.everywhere.popup" timestamp="1596965359766">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="516" y="232" width="672" height="678" key="search.everywhere.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1596965359766" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/midpoint_line.rs</url>
+          <line>122</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/midpoint_line.rs</url>
+          <line>196</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
