@@ -14,8 +14,8 @@ name = "dda_line"
 path = "src/dda_line.rs"
 
 [[bin]]
-name = "minifb"
-path = "src/minifb.rs"
+name = "midpoint_circle"
+path = "src/midpoint_circle.rs"
 
 [[bin]]
 name = "midpoint_line"

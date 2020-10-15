@@ -31,8 +31,8 @@ fn main() {
         warn!("Not Enough Argument. Using default values.");
 
         // Default
-        let point_a = Point::from(-20, -70);
-        let point_b = Point::from(20, 70);
+        let point_a = Point::from(2, 63);
+        let point_b = Point::from(252, 242);
 
         // Test Case 1
         // let point_a = Point::from(10, 10);
@@ -97,8 +97,10 @@ fn main() {
         let mut line_points = calc_line_midpoint(zero_line);
         convert_zone(&mut line_points, &line.zone);
 
-        for point in line_points {
+        trace!("--------- Zone : {} ----------", &line.zone.name());
+        for point in &line_points {
             let pointer = Point::from(point[0], point[1]);
+            trace!("x:{} y:{}", pointer.x, pointer.y);
             draw_point(pointer.actual_x(), pointer.actual_y(), canvas);
         }
     }
@@ -131,15 +133,33 @@ fn main() {
             if d > 0 {
                 y += 1;
                 d += delta_ne;
+
+                let delta_type;
+                if d < 0 {
+                    delta_type = "deltaE";
+                }else {
+                    delta_type = "deltaNE";
+                }
+
+                trace!("x:{} y:{} {}:{}", x, y, delta_type, d);
             } else {
                 d += delta_e;
+
+                let delta_type;
+                if d < 0 {
+                    delta_type = "deltaE";
+                }else {
+                    delta_type = "deltaNE";
+                }
+
+                trace!("x:{} y:{} {}:{}", x, y, delta_type, d);
             }
         }
 
-        trace!("--- ZONE 0 Points ---");
-        for point in &points {
-            trace!("x:{} y:{}", point[0], point[1]);
-        }
+        // trace!("--- ZONE 0 Points ---");
+        // for point in &points {
+        //     trace!("x:{} y:{}", point[0], point[1]);
+        // }
         points
     }
 
