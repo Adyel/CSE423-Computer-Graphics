@@ -24,11 +24,8 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46afb68a-c8e6-499a-a51a-58b11fa33f82" name="Default Changelist" comment="finish lab02">
-      <change afterPath="$PROJECT_DIR$/src/midpoint_circle.rs" afterDir="false" />
+    <list default="true" id="46afb68a-c8e6-499a-a51a-58b11fa33f82" name="Default Changelist" comment="Midpoint Circle Added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/midpoint_line.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/midpoint_line.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,6 +144,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.run" />
+        <item itemvalue="Cargo.new" />
+        <item itemvalue="Cargo.build" />
         <item itemvalue="Cargo.Run midpoint_line" />
         <item itemvalue="Cargo.Run circle" />
       </list>
@@ -194,7 +194,7 @@
       <workItem from="1600957649230" duration="129000" />
       <workItem from="1601778609641" duration="2350000" />
       <workItem from="1601792840327" duration="1722000" />
-      <workItem from="1602753186268" duration="13000" />
+      <workItem from="1602753186268" duration="92000" />
     </task>
     <task id="LOCAL-00001" summary="finalize lab01">
       <created>1596966694121</created>
@@ -224,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598646589811</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Midpoint Circle Added">
+      <created>1602753251173</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602753251173</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +252,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finalize lab01" />
     <MESSAGE value="finish lab02" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish lab02" />
+    <MESSAGE value="Midpoint Circle Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Midpoint Circle Added" />
   </component>
 </project>

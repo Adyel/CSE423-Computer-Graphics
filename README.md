@@ -21,3 +21,9 @@ Line drawn using DDA algoritm.
 Line Drawn using Mid Point Algorithm
 
 ![Midpoint Line](./docs/images/midpoint_line_01.png)
+
+## Cirlce using Midpoint Algorithm.
+
+A Circular pattern was drawn with the help of 8 way symmetry of circle and using Midpoint alorithm.
+
+![Midpoint Circle](./docs/images/midpoint_circle_01.png)
